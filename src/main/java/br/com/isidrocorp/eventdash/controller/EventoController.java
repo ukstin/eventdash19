@@ -31,7 +31,7 @@ public class EventoController {
 			                                     @RequestParam(name="fim") String fim){
 		LocalDate dataIni = LocalDate.parse(inicio);
 		LocalDate dataFim = LocalDate.parse(fim);
-		return dao.findAllByDataBetween(dataIni,dataFim);
+		return dao.findAllByDataBetweenOrderByDataAsc(dataIni,dataFim);
 	}
 
 }

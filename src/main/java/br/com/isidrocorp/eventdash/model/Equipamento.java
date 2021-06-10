@@ -19,6 +19,9 @@ public class Equipamento {
 	@Column(name="hostname", length = 50, nullable = false)
 	private String hostname;
 	
+	@Column(name="ipaddr", length = 15, nullable = false)
+	private String ipAddr;
+	
 	public int getId() {
 		return id;
 	}
@@ -43,8 +46,7 @@ public class Equipamento {
 		this.ipAddr = ipAddr;
 	}
 
-	@Column(name="ipaddr", length = 15, nullable = false)
-	private String ipAddr;
+	
 	
 	
 
